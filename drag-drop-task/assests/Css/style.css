@@ -1,0 +1,48 @@
+#DragArea{
+    width: 80%;
+    height: 250px;
+    border: 1px solid black;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    animation: blue 0.5s linear infinite;
+    animation-delay: 0.5s;
+}
+
+
+#DropArea{
+    width: 80%;
+    height: 250px;
+    border: 1px dashed black;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    animation: red 0.5s linear infinite;
+    animation-delay: 0.5s;
+
+}
+.item {
+    cursor: move;
+    width: 22%;
+    height: 80%;
+    margin: auto;
+
+}
+
+@keyframes red {
+
+    from{
+        background-color: rgb(38, 15, 71);
+    }
+    to{
+        background-color: rgb(71, 1, 1);
+    }
+}
+@keyframes blue {
+    from{
+        background-color: rgb(8, 6, 114);
+    }
+    to{
+        background-color: rgb(39, 46, 8);
+    }
+}
